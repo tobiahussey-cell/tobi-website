@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Business Website - Get More Calls</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#111827',
+                        accent: '#0d9488',
+                        base: '#f9fafb',
+                        text: '#374151',
+                        border: '#e5e7eb'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+        }
+        
+        .btn-accent {
+            background-color: #0d9488;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .btn-accent:hover {
+            background-color: #0f766e;
+            transform: translateY(-1px);
+        }
+        
+        .problem-card {
+            border-left: 4px solid #ef4444;
+        }
+        
+        .solution-card {
+            border-left: 4px solid #10b981;
+        }
+        
+        .proof-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .proof-card:hover {
+            border-color: #0d9488;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="font-sans bg-base text-text">
+
+<!-- Header + CTA (sticky) -->
+<header class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+        <div class="flex flex-col leading-tight">
+            <span class="text-lg font-bold text-primary">Tobi Hussey</span>
+            <span class="text-xs text-text">Local Website Specialist</span>
+        </div>
+        
+        <div class="flex items-center space-x-3">
+            <a href="#contact" class="btn-accent px-4 py-2 rounded-lg md:px-6 md:py-2 text-sm md:text-base">
+                Get Free Review
+            </a>
+            <a href="tel:+447865834414" class="text-text hover:text-accent text-sm md:text-base" aria-label="Call Tobi">
+                <i class="fas fa-phone"></i>
+            </a>
+            <a href="https://wa.me/447865834414" class="text-text hover:text-accent text-sm md:text-base" aria-label="WhatsApp Tobi">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- HERO SECTION - FINAL UPGRADE -->
+<section id="home" class="hero-bg text-white py-20">
+    <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <!-- NEW HEADLINE -->
+            <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+                We Rebuild Local Business Websites to Generate More Calls
+            </h1>
+            
+            <!-- CONCRETE IDENTITY LINE -->
+            <p class="text-lg opacity-90 mb-6">
+                Built by Tobi Hussey — UK-based, local service websites only.
+            </p>
+            
+            <!-- NEW SUBHEADLINE -->
+            <p class="text-xl mb-8 opacity-95 max-w-3xl mx-auto">
+                Fast, mobile-optimised websites for local service businesses built to convert visitors into calls. Fixed price. Delivered in 7 days.
+            </p>
+            
+            <!-- NEW CTAs -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+                <a href="#contact" class="btn-accent px-8 py-4 text-lg rounded-lg hover:shadow-xl transition-all">
+                    Get My Free Website Review
+                </a>
+                <a href="tel:+447865834414" class="bg-transparent border-2 border-white text-white px-8 py-4 text-lg rounded-lg hover:bg-white hover:text-primary transition-all">
+                    Call Now
+                </a>
+            </div>
+            
+            <!-- WHAT HAPPENS NEXT -->
+            <p class="mt-4 text-sm opacity-90">
+                You'll get a 2–3 minute video review + 3 clear fixes within 48 hours.
+            </p>
+            <p class="mt-2 text-sm opacity-80">
+                Taking 3 reviews per week to keep delivery fast.
+            </p>
+            <p class="mt-2 text-sm opacity-80">
+                You'll get the Loom link + checklist by text or email.
+            </p>
+            
+            <!-- TRUST SNAPSHOT - ABOVE THE FOLD -->
+            <div class="flex flex-wrap justify-center gap-6 text-sm bg-black bg-opacity-20 rounded-lg p-4 max-w-2xl mx-auto mt-10">
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                    <span>Fixed price, no contracts</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                    <span>Designed for mobile & Google</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check-circle text-green-400 mr-2"></i>
+                    <span>7-day turnaround</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROOF BLOCK -->
+<section class="py-12 bg-base">
+    <div class="container mx-auto px-4 max-w-6xl">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-primary mb-4">What You'll Receive</h2>
+            <p class="text-text max-w-3xl mx-auto">
+                No fluff, just actionable insights you can use immediately
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="proof-card bg-white">
+                <div class="w-12 h-12 bg-base border border-border rounded-lg flex items-center justify-center mb-4">
+                    <i class="fas fa-video text-accent text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-primary mb-2">Loom Video Audit</h3>
+                <p class="text-text">
+                    A personalized 2-3 minute video showing exactly what's working and what's not on your current site.
+                </p>
+            </div>
+            
+            <div class="proof-card bg-white">
+                <div class="w-12 h-12 bg-base border border-border rounded-lg flex items-center justify-center mb-4">
+                    <i class="fas fa-list-check text-accent text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-primary mb-2">Top 3 Fixes</h3>
+                <p class="text-text">
+                    Clear, prioritized recommendations you can implement yourself or discuss with us.
+                </p>
+            </div>
+            
+            <div class="proof-card bg-white">
+                <div class="w-12 h-12 bg-base border border-border rounded-lg flex items-center justify-center mb-4">
+                    <i class="fas fa-paint-brush text-accent text-xl"></i>
+                </div>
+                <h3 class="font-bold text-lg text-primary mb-2">Redesign Preview</h3>
+                <p class="text-text">
+                    Example of how your site could look with our conversion-focused approach (mockup).
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROBLEM → SOLUTION SECTION -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4 max-w-6xl">
+        <!-- PROBLEM -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-primary mb-4">Why Most Local Business Websites Don't Convert</h2>
+            <p class="text-text max-w-3xl mx-auto">
+                Your current website might be costing you customers without you even realizing it.
+            </p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+            <div class="problem-card bg-base p-6 rounded-r-lg">
+                <h3 class="font-bold text-red-600 mb-3">The Problem</h3>
+                <ul class="space-y-3 text-text">
+                    <li class="flex items-start">
+                        <i class="fas fa-times-circle text-red-500 mt-1 mr-3"></i>
+                        <span>Hard to use on mobile (small text, awkward menus, slow pages)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-times-circle text-red-500 mt-1 mr-3"></i>
+                        <span>Slow loading (people give up before it even opens)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-times-circle text-red-500 mt-1 mr-3"></i>
+                        <span>No clear next step (no 'Call Now', no quote form)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-times-circle text-red-500 mt-1 mr-3"></i>
+                        <span>Outdated design (hurts trust with potential customers)</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="solution-card bg-base p-6 rounded-r-lg">
+                <h3 class="font-bold text-green-600 mb-3">What We Do Differently</h3>
+                <ul class="space-y-3 text-text">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                        <span>Clear messaging that tells visitors exactly what to do</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                        <span>Mobile-first layouts that work perfectly on all devices</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                        <span>Click-to-call & enquiry-focused design that drives action</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                        <span>Simple, fast, conversion-driven pages that build trust</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- WHAT YOU GET - SINGLE OFFER -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-primary mb-4">What You Get</h2>
+            <p class="text-text max-w-3xl mx-auto">
+                Everything you need to start getting more calls from your website
+            </p>
+            <p class="text-sm text-text mt-2">
+                Typical agency builds are £1,500–£3,000+. I keep it lean, fast, and conversion-focused.
+            </p>
+        </div>
+        
+        <div class="bg-base rounded-xl p-8 max-w-4xl mx-auto border border-border">
+            <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                    <ul class="space-y-4 text-text">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Custom website designed specifically for your business</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Mobile-optimised & lightning fast loading</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Built to generate calls & enquiries</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Basic SEO setup so Google can find you</span>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-4 text-text">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Contact form & prominent click-to-call buttons</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>Delivered in just 7 days</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                            <span>No ongoing fees - one-time payment of £500</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-8 pt-6 border-t border-border">
+                <p class="text-lg font-semibold text-primary mb-4">Ready to get more calls from your website?</p>
+                <a href="#contact" class="btn-accent px-8 py-3 text-lg rounded-lg inline-block">
+                    Get My Free Website Review
+                </a>
+                <p class="mt-3 text-sm text-text">
+                    You'll get a 2–3 minute video review + 3 clear fixes within 48 hours.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="py-16 bg-primary text-white">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-4">Want to Know What's Holding Your Website Back?</h2>
+            <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                I'll record a quick, no-pressure review of your current site and show you exactly what to improve.
+            </p>
+            <p class="mt-3 text-sm opacity-75">
+                You'll get a 2–3 minute video review + 3 clear fixes within 48 hours.
+            </p>
+        </div>
+        
+        <div class="bg-white text-text rounded-xl p-8 shadow-xl">
+            <!-- Netlify Form Integration -->
+            <form class="space-y-6" name="free-review" method="POST" data-netlify="true" action="/success">
+                <input type="hidden" name="form-name" value="free-review" />
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Your Name *</label>
+                        <input type="text" name="name" class="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="John Smith" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2">Phone Number *</label>
+                        <input type="tel" name="phone" class="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="07700 900123" required>
+                    </div>
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium mb-2">Email Address (optional)</label>
+                    <input type="email" name="email" class="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="john@email.com">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium mb-2">Current Website (if any)</label>
+                    <input type="url" name="website" class="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent" placeholder="https://yoursite.com">
+                </div>
+                
+                <div>
+                    <label class="block text-sm font-medium mb-2">What do you do / what area do you serve? (optional)</label>
+                    <textarea name="business" class="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent" rows="2" placeholder="e.g., Plumbing services in Manchester"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-accent w-full py-4 text-lg rounded-lg">
+                    Get My Free Website Review
+                </button>
+                
+                <p class="text-center text-sm text-text">
+                    I'll contact you once to confirm your site link, then send the video. No spam.
+                </p>
+                <p class="text-center text-xs text-text mt-2">
+                    If you don't find the review useful, I'll still send you a redesign checklist and leave you alone.
+                </p>
+                <p class="text-center text-xs text-text mt-2">
+                    Your details are only used to send your review.
+                </p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-8">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-4 md:mb-0">
+                <div class="flex flex-col leading-tight">
+                    <span class="text-lg font-bold">Tobi Hussey</span>
+                    <span class="text-xs text-gray-400">Local Website Specialist</span>
+                </div>
+            </div>
+            
+            <div class="text-center md:text-right">
+                <div class="flex items-center justify-center md:justify-end mb-2">
+                    <i class="fas fa-map-marker-alt mr-2 text-gray-400"></i>
+                    <span class="text-gray-400">Serving Local Service Businesses</span>
+                </div>
+                <div class="flex items-center justify-center md:justify-end mb-1">
+                    <i class="fas fa-phone mr-2 text-gray-400"></i>
+                    <a href="tel:+447865834414" class="text-white hover:text-accent transition-colors">+44 7865 834414</a>
+                </div>
+                <div class="flex items-center justify-center md:justify-end">
+                    <i class="fas fa-envelope mr-2 text-gray-400"></i>
+                    <a href="mailto:tobi.a.hussey@outlook.com" class="text-white hover:text-accent transition-colors">tobi.a.hussey@outlook.com</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-700 mt-6 pt-6 text-center text-gray-400 text-sm">
+            <p>&copy; 2026 Tobi Hussey. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Smooth scrolling with header offset
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const id = this.getAttribute('href');
+            const el = document.querySelector(id);
+            if (!el) return;
+
+            e.preventDefault();
+            const y = el.getBoundingClientRect().top + window.pageYOffset - 80; // header offset
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        });
+    });
+});
+</script>
+
+</body>
+</html>
+
